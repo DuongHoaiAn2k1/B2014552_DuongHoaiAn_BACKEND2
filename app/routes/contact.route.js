@@ -6,8 +6,11 @@ const router = express.Router();
 router
   .route("/")
   .get(contacts.findAll)
+  // .post((req, res) => {
+  //   res.json(req.body);
+  // })
   .post(contacts.create)
-  .delete(contacts.delete);
+  .delete(contacts.deleteAll);
 
 router.route("/favorite").get(contacts.findAllFavorite);
 
