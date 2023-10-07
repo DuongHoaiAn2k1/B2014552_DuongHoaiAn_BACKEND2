@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const contactRoute = require("./app/routes/contact.route");
 const ApiError = require("./app/api-error");
+var bodyParser = require("body-parser");
 const app = express();
 
 app.use(cors());
